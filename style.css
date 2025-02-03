@@ -4,9 +4,19 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body *{
-    border: 1px solid red;
+@font-face {
+    font-family: 'Young';
+    src: url(../recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'Oufit';
+    src: url(../recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/* body *{
+    border: 1px solid red;
+} */
 
 body {
     display: flex;
@@ -28,7 +38,7 @@ body {
 
 .container__title {
     margin-bottom: 30px;
-    font-family: Young Serif;
+    font-family: Young;
     font-size: 50px;
 }
 
@@ -47,8 +57,9 @@ body {
 .preparation__time__title--modified {
     margin-bottom: 12px;
     color: hsl(332, 51%, 32%);
-    font-family: Young Serif;
+    font-family: Young;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .preparation__time__total--modified, .preparation__time__preparation, .preparation__time__cooking {
@@ -62,7 +73,7 @@ body {
     color: hsl(14, 45%, 36%);
     font-size: 25px;
     margin-bottom: 18px;
-    font-family: Young Serif;
+    font-family: Young;
     font-size: 40px;
 }
 
@@ -103,6 +114,7 @@ body {
     font-size: 30px;
     color: hsl(14, 45%, 36%);
     margin-bottom: 25px;
+    font-family: Young;
 }
 
 .nutrition__paragraph--modified {
