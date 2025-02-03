@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body *{
+    border: 1px solid red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 225px;
+    min-height: 100vh;
+}
+
+.omelette__image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.container {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.container__title {
+    margin-bottom: 30px;
+    font-family: Young Serif;
+    font-size: 50px;
+}
+
+.container__paragraph {
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+.preparation__time--modified {
+    background-color: #fff5fa;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.preparation__time__title--modified {
+    margin-bottom: 12px;
+    color: hsl(332, 51%, 32%);
+    font-family: Young Serif;
+    font-size: 20px;
+}
+
+.preparation__time__total--modified, .preparation__time__preparation, .preparation__time__cooking {
+    padding: 8px;
+    margin-left: 18px;
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+.ingredients__title--modified {
+    color: hsl(14, 45%, 36%);
+    font-size: 25px;
+    margin-bottom: 18px;
+    font-family: Young Serif;
+    font-size: 40px;
+}
+
+.ingredients__item__eggs--modified, .ingredients__items__taste--modified, .ingredients__items__pepper--modified, .ingredients__items__butter--modified, .ingredients__items__optional--modified {
+    margin-left: 18px;
+    padding: 8px;
+}
+
+.ingredients__items--modified {
+    margin-bottom: 30px;
+}
+
+.instructions--modified {
+    margin-top: 25px;
+}
+
+.instructions__title--modified {
+    font-size: 30px;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 12px;
+}
+
+.steps--modified {
+    padding: 12px;
+    margin-bottom: 30px;
+}
+
+.step__one--modified, .step__two--modified, .step__three--modified, .step__four--modified, .step__five--modified, .step__six--modified {
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.nutrition--modified {
+    margin-top: 30px;
+}
+
+.nutrition__title--modified {
+    font-size: 30px;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 25px;
+}
+
+.nutrition__paragraph--modified {
+    margin-bottom: 20px;
+}
+
+.nutrition__calories--modified, .nutrition__carbs--modified, .nutrition__protein--modified, .nutrition__fat--modified {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.nutrition__calories--modified, .nutrition__carbs--modified, .nutrition__protein--modified, .nutrition__fat--modified {
+}
+
+.value__calories--modified, .value__carbs--modified, .value__protein--modified, .value__fat--modified {
+    list-style: none;
+}
