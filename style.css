@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -23,6 +23,14 @@ body {
     flex-direction: column;
     padding: 20px 225px;
     min-height: 100vh;
+    background-color: hsl(31, 52.90%, 90.00%);
+    font-family: Outfit;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    padding: 3rem;
 }
 
 .omelette__image {
@@ -43,8 +51,10 @@ body {
 }
 
 .container__paragraph {
-    font-family: Outfit;
-    font-size: 18px;
+    /* font-family: Outfit; */
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
 }
 
 .preparation__time--modified {
@@ -58,28 +68,37 @@ body {
     margin-bottom: 12px;
     color: hsl(332, 51%, 32%);
     font-family: Young;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .preparation__time__total--modified, .preparation__time__preparation, .preparation__time__cooking {
     padding: 8px;
     margin-left: 18px;
-    font-family: Outfit;
-    font-size: 18px;
+    /* font-family: Outfit; */
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .ingredients__title--modified {
     color: hsl(14, 45%, 36%);
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 18px;
     font-family: Young;
-    font-size: 40px;
+    font-weight: 700;
 }
 
-.ingredients__item__eggs--modified, .ingredients__items__taste--modified, .ingredients__items__pepper--modified, .ingredients__items__butter--modified, .ingredients__items__optional--modified {
+.ingredients__items__eggs--modified, .ingredients__items__taste--modified, .ingredients__items__pepper--modified, .ingredients__items__butter--modified, .ingredients__items__optional--modified {
     margin-left: 18px;
     padding: 8px;
+    font-size: 16px;
+    /* font-family: Outfit; */
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+}
+
+.ingredients__items__eggs--modified::marker, .ingredients__items__taste--modified::marker, .ingredients__items__pepper--modified::marker, .ingredients__items__butter--modified::marker, .ingredients__items__optional--modified::marker {
+    color: hsl(14, 45%, 36%);
 }
 
 .ingredients__items--modified {
@@ -94,6 +113,14 @@ body {
     font-size: 30px;
     color: hsl(14, 45%, 36%);
     margin-bottom: 12px;
+    font-family: Young;
+    font-weight: 700;
+}
+
+.step__one--modified::marker, .step__two--modified::marker, .step__three--modified::marker, .step__four--modified::marker, 
+.step__five--modified::marker, .step__six--modified::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
 }
 
 .steps--modified {
@@ -104,32 +131,77 @@ body {
 .step__one--modified, .step__two--modified, .step__three--modified, .step__four--modified, .step__five--modified, .step__six--modified {
     padding: 8px;
     margin-left: 10px;
+    font-size: 16px;
+    /* font-family: Outfit; */
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
 }
 
-.nutrition--modified {
-    margin-top: 30px;
-}
+/* .item--modified {
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 400;
+} */
 
 .nutrition__title--modified {
+    margin-top: 30px;
     font-size: 30px;
     color: hsl(14, 45%, 36%);
     margin-bottom: 25px;
     font-family: Young;
+    font-weight: 700;
 }
 
 .nutrition__paragraph--modified {
     margin-bottom: 20px;
+    /* font-family: Outfit; */
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
 }
 
-.nutrition__calories--modified, .nutrition__carbs--modified, .nutrition__protein--modified, .nutrition__fat--modified {
+.nutrition__information__item {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px 24px 48px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.title, .value {
+    width: 50%;
+    text-align: left;
+}
+
+.title {
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+.value {
+    color: hsl(14, 45%, 36%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* .nutrition__information__item--modified {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
     padding: 18px;
+    /* position: relative;
+    left: 0; */
+} */
+
+.calories__title--modified, .carbs__title--modified, .protein__title--modified, .fat__title--modified {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
 }
 
-.nutrition__calories--modified, .nutrition__carbs--modified, .nutrition__protein--modified, .nutrition__fat--modified {
-}
-
-.value__calories--modified, .value__carbs--modified, .value__protein--modified, .value__fat--modified {
+.calories__value--modified, .carbs__value--modified, .protein__value--modified, .fat__value--modified {
     list-style: none;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
 }
