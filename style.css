@@ -19,9 +19,7 @@
 } */
 
 body {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 225px;
+    padding: 20px 0;
     min-height: 100vh;
     background-color: hsl(31, 52.90%, 90.00%);
     font-family: Outfit;
@@ -31,6 +29,9 @@ body {
     background-color: hsl(0, 0%, 100%);
     border-radius: 12px;
     padding: 3rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .omelette__image {
@@ -51,7 +52,6 @@ body {
 }
 
 .container__paragraph {
-    /* font-family: Outfit; */
     font-size: 16px;
     font-weight: 400;
     color: hsl(30, 10%, 34%);
@@ -75,7 +75,6 @@ body {
 .preparation__time__total--modified, .preparation__time__preparation, .preparation__time__cooking {
     padding: 8px;
     margin-left: 18px;
-    /* font-family: Outfit; */
     font-size: 16px;
     font-weight: 400;
 }
@@ -92,7 +91,6 @@ body {
     margin-left: 18px;
     padding: 8px;
     font-size: 16px;
-    /* font-family: Outfit; */
     color: hsl(30, 10%, 34%);
     font-weight: 400;
 }
@@ -132,16 +130,9 @@ body {
     padding: 8px;
     margin-left: 10px;
     font-size: 16px;
-    /* font-family: Outfit; */
     color: hsl(24, 5%, 18%);
     font-weight: 400;
 }
-
-/* .item--modified {
-    font-family: Outfit;
-    font-size: 20px;
-    font-weight: 400;
-} */
 
 .nutrition__title--modified {
     margin-top: 30px;
@@ -154,7 +145,6 @@ body {
 
 .nutrition__paragraph--modified {
     margin-bottom: 20px;
-    /* font-family: Outfit; */
     font-size: 16px;
     font-weight: 400;
     color: hsl(30, 10%, 34%);
@@ -185,15 +175,6 @@ body {
     font-weight: 700;
 }
 
-/* .nutrition__information__item--modified {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 18px;
-    /* position: relative;
-    left: 0; */
-} */
-
 .calories__title--modified, .carbs__title--modified, .protein__title--modified, .fat__title--modified {
     font-size: 16px;
     font-weight: 400;
@@ -204,4 +185,24 @@ body {
     list-style: none;
     color: hsl(14, 45%, 36%);
     font-weight: 700;
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 0;
+    }
+    .card {
+        padding: 0;
+        width: 100%;
+    }
+    section {
+        padding: 20px;
+        margin: 25px;
+    }
+    section:last-child {
+        margin-bottom: 0;
+    }
+    .omelette__image {
+        border-radius: 2px;
+    }
 }
